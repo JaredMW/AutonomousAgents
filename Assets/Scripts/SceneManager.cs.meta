@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 20e50c28a26a439438eada400e7dbcf6
+timeCreated: 1480982146
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - _prefabObstacle: {instanceID: 0}
+  - mainFlock: {instanceID: 0}
+  - terrain: {instanceID: 0}
+  - fwdMat: {fileID: 2100000, guid: 982bee6343b9d2243ad7cf8bf8921118, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

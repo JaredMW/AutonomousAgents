@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &172372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 456614}
+  - 114: {fileID: 11479676}
+  m_Layer: 0
+  m_Name: Leader Following Fish
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &456614
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172372}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 32.9239693, y: 0, z: 20.5979004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11479676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed0569b6221eb134fb2c290b477c157e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _flockerPrefabs:
+  - {fileID: 128254, guid: 2c0207b30d29fa14c83ecb336a111554, type: 2}
+  _leaderPrefab: {fileID: 169738, guid: d0cfabbb2efcee34399dd2c40fe7746c, type: 2}
+  _avgPositionBlockPrefab: {fileID: 177732, guid: c8241a4337ec972469b7447f710a82f0,
+    type: 2}
+  flockers: []
+  leader: {fileID: 0}
+  path: {fileID: 0}
+  currentState: 2
+  numFlockers: 5
+  spawnWidth: 3
+  alignmentWeight: 1
+  cohesionWeight: 1
+  separationWeight: .899999976
+  followWeight: 1.29999995
+  pathWeight: 1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: currentState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _leaderPrefab
+      value: 
+      objectReference: {fileID: 169738, guid: d0cfabbb2efcee34399dd2c40fe7746c, type: 2}
+    - target: {fileID: 0}
+      propertyPath: followWeight
+      value: 1.29999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: separationWeight
+      value: .899999976
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 172372}
+  m_IsPrefabParent: 1

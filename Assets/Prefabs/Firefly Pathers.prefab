@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &101286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 455874}
+  - 114: {fileID: 11498036}
+  m_Layer: 0
+  m_Name: Firefly Pathers
+  m_TagString: Untagged
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &455874
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 75, y: 25, z: 75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11498036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed0569b6221eb134fb2c290b477c157e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _flockerPrefabs:
+  - {fileID: 193448, guid: 79df4ed71b32f924fada1534ab10f5a0, type: 2}
+  _leaderPrefab: {fileID: 0}
+  _avgPositionBlockPrefab: {fileID: 177732, guid: c8241a4337ec972469b7447f710a82f0,
+    type: 2}
+  flockers: []
+  leader: {fileID: 0}
+  path: {fileID: 0}
+  currentState: 3
+  numFlockers: 50
+  spawnWidth: 75
+  alignmentWeight: 1
+  cohesionWeight: 1
+  separationWeight: .300000012
+  followWeight: 1
+  pathWeight: 1.39999998
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 101286}
+  m_IsPrefabParent: 1
